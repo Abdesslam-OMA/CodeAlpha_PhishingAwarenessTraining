@@ -357,7 +357,8 @@ const questions = [
 let current = 0;
 let points = 0;
 let answered = false;
-
+let finished = false;
+  
 const questionEl = document.getElementById("question");
 const answersEl = document.getElementById("answers");
 const feedbackEl = document.getElementById("feedback");
@@ -408,29 +409,29 @@ function chooseAnswer(index) {
 }
 
 nextBtn.addEventListener("click", () => {
+  if (finished) {
+    current = 0;
+    points = 0;
+    finished = false;
+    document.getElementById("score").textContent = "";
+    renderQuestion();
+    return;
+  }
+
   if (current < questions.length - 1) {
     current++;
     renderQuestion();
     return;
   }
 
-  if (current === questions.length - 1) {
-    current = questions.length;
-    questionEl.textContent = "Training Complete!";
-    answersEl.innerHTML = "";
-    feedbackEl.textContent =
-      `You scored ${points} out of ${questions.length}.`;
-    document.getElementById("progress").textContent = "Final Results";
-    document.getElementById("score").textContent =
-      `Your score: ${Math.round(points / questions.length * 100)}%`;
-    nextBtn.textContent = "Try Again";
-    return;
-  }
-
-  current = 0;
-  points = 0;
-  document.getElementById("score").textContent = "";
-  renderQuestion();
+  finished = true;
+  questionEl.textContent = "Training Complete!";
+  answersEl.innerHTML = "";
+  feedbackEl.textContent = `You scored ${points} out of ${questions.length}.`;
+  document.getElementById("progress").textContent = "Final Results";
+  document.getElementById("score").textContent =
+    `Your score: ${Math.round(points / questions.length * 100)}%`;
+  nextBtn.textContent = "Try Again";
 });
   }
 });
