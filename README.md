@@ -68,7 +68,7 @@ Because PhishGuard has no external dependencies, running it locally takes second
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/PhishGuard.git](https://github.com/your-username/PhishGuard.git)
+   git clone [https://github.com/your-username/PhishGuard.git](https://github.com/Abdesslam-OMA/PhishGuard.git)
    ```
 2. **Navigate to the project directory:**
    ```bash
