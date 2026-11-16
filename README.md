@@ -27,22 +27,24 @@
 
 ## 🔍 Overview
 
-Phishing remains one of the most common entry points for cyberattacks. **PhishGuard** provides a structured, beginner-friendly training module broken down into six core sections, culminating in an interactive 5-question assessment to reinforce key concepts.
+Phishing is one of the most common cybersecurity threats. Attackers use deceptive emails, fake websites, and social engineering techniques to steal sensitive information.
 
-Built entirely with vanilla **HTML5, CSS3, and JavaScript**, the application requires zero external dependencies or build tools, making it lightweight, fast, and easy to deploy anywhere.
+PhishGuard provides a beginner-friendly training experience through educational content, practical examples, and an interactive five-question quiz.
+
+The project is built using HTML5, CSS3, and JavaScript, with no external dependencies or build tools required.
 
 ---
 
 ## ✨ Features
 
-* **01. Understanding Phishing:** Breaks down core attack vectors including Email Phishing, Smishing (SMS), Spear Phishing, and Website Phishing.
-* **02. Recognizing Phishing Emails:** Highlights red flags (suspicious senders, urgent language, unexpected links/attachments) alongside a **simulated phishing email dissection**.
-* **03. Identifying Fake Websites:** Teaches users how to spot look-alike domains, fake login pages, and why HTTPS alone does not guarantee legitimacy.
-* **04. Social Engineering Tactics:** Explains psychological triggers used by attackers—**Fear, Urgency, Authority, and Curiosity**.
-* **05. Protection & Incident Response:** Provides actionable security best practices (MFA, password hygiene, reporting) and a step-by-step recovery checklist if a user clicks a malicious link.
-* **06. Interactive Knowledge Quiz:** A 5-question multiple-choice quiz with instant answer validation, explanatory feedback, button state locking, and final percentage scoring.
-* **Responsive Dark-Mode UI:** Clean, modern cybersecurity aesthetic built with CSS custom properties (`:root`), responsive CSS Grid layouts, and sticky navigation.
+* **01. Understanding Phishing:** Learn about email phishing, smishing, spear phishing, and website phishing.
+* **02. Recognizing Phishing Emails:** Identify suspicious senders, urgent messages, malicious links, and unexpected attachments.
+* **03. Identifying Fake Websites:** Learn to recognize suspicious domains, fake login pages, and misleading HTTPS indicators.
+* **04. Social Engineering Tactics:** Understand how attackers exploit fear, urgency, authority, and curiosity.
+* **05. Protection & Incident Response:** Discover security best practices, including multi-factor authentication, strong passwords, and reporting suspicious activity.
+* **06. Interactive Knowledge Quiz:** Test your understanding with five multiple-choice questions and instant feedback.
 
+The website also includes a responsive dark-themed interface designed for a clear learning experience.
 ---
 
 ## 📸 Screenshots
@@ -68,11 +70,11 @@ Because PhishGuard has no external dependencies, running it locally takes second
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/PhishGuard.git](https://github.com/Abdesslam-OMA/PhishGuard.git)
+   git clone https://github.com/Abdesslam-OMA/CodeAlpha_PhishingAwarenessTraining.git
    ```
 2. **Navigate to the project directory:**
    ```bash
-   cd PhishGuard
+   cd CodeAlpha_PhishingAwarenessTraining
    ```
 3. **Launch the application:**
    - Double-click `index.html` to open it directly in any modern web browser, **or**
