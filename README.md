@@ -49,7 +49,7 @@ Built entirely with vanilla **HTML5, CSS3, and JavaScript**, the application req
 
 | Hero & Navigation | Recognizing Phishing Emails |
 | :---: | :---: |
-| ![Hero Section](screenshots/hero.png) | ![Email Phishing](screenshots/email-phishing.png) |
+| ![Hero Section](screenshots/Hero.png) | ![Email Phishing](screenshots/email-phisihing.png) |
 
 | Identifying Fake Websites | Social Engineering Tactics |
 | :---: | :---: |
