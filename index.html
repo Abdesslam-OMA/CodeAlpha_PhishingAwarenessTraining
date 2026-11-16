@@ -408,30 +408,30 @@ function chooseAnswer(index) {
 }
 
 nextBtn.addEventListener("click", () => {
-  current++;
-  if (current < questions.length) {
+  if (current < questions.length - 1) {
+    current++;
     renderQuestion();
-  } else {
+    return;
+  }
+
+  if (current === questions.length - 1) {
+    current = questions.length;
     questionEl.textContent = "Training Complete!";
     answersEl.innerHTML = "";
     feedbackEl.textContent =
-      `You scored ${points} out of ${questions.length}. ${
-        points === 5 ? "Excellent work!" :
-        points >= 3 ? "Good effort! Keep learning." :
-        "Review the lessons and try again."
-      }`;
-    feedbackEl.style.color = "var(--accent)";
+      `You scored ${points} out of ${questions.length}.`;
     document.getElementById("progress").textContent = "Final Results";
     document.getElementById("score").textContent =
       `Your score: ${Math.round(points / questions.length * 100)}%`;
     nextBtn.textContent = "Try Again";
-    nextBtn.onclick = () => {
-      current = 0;
-      points = 0;
-      document.getElementById("score").textContent = "";
-      nextBtn.onclick = null;
-      renderQuestion();
-    };
+    return;
+  }
+
+  current = 0;
+  points = 0;
+  document.getElementById("score").textContent = "";
+  renderQuestion();
+});
   }
 });
 
